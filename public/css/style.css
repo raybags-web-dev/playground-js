@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(44, 65, 104, 0.5);
+  user-select: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  top: 40%;
+  font-size: 20px;
+  border-radius: 0.5rem;
+  background-color: rgb(140, 159, 160);
+  margin: auto;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+  text-transform: capitalize;
+  text-align: center;
+  color: rgb(250, 246, 246);
+  letter-spacing: 0.1rem;
+  box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.5);
+}
+.btn:active {
+  transition: 0;
+  transform: scale(1.1);
+}
+.progress-bar-contianer {
+  position: absolute;
+  background-color: rgb(189, 214, 216);
+  width: 300px;
+  height: 80px;
+  transition: 1s;
+  border-radius: 0.2rem;
+  left: 50%;
+  top: 50%;
+  margin: auto;
+  padding: 0.2rem;
+  border: 2px solid rgb(146, 99, 99);
+  transform: translate(-50%, 50%);
+}
+
+.progress-bar {
+  width: 1%;
+  height: 100%;
+  background: green;
+}
